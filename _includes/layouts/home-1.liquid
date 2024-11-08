@@ -1,0 +1,550 @@
+{% include 'parts/head.liquid' %}
+{% include 'parts/menu.liquid' %}
+
+
+
+<!-- Intro Section -->
+<!-- <section id="intro-section" class="intro-section space-250-top-bottom"> -->
+<section id="welcome" class="intro-section space-250-top-bottom">
+	<div class="container">
+		<div class="row intro">
+			<div class="logo columns small-12 medium-8 large-6">
+				<img class="block" src="media/logo-combination-eng.png">
+			</div><br>
+			<div class="columns small-12 medium-8 large-7 space-150-top">
+				<div class="title text-blue h4 font-h strong space-100-bottom">
+					<!-- End-to-end Commercial Solutions <span class="show-small-block show-large-inline">in <span class="js-immigration-text text-orange text-underline"></span></span> -->
+					End-to-end Commercial Solutions in <span
+						class="js-immigration-text text-orange text-underline"></span>
+				</div>
+				<a href="" class="button fill-blue">View Catalogue</a>
+			</div>
+			<div class="intro-video">
+				<div class="video-embed video-embed-bg">
+					<!-- <div class="video-embed video-embed-bg" style="z-index: 1; filter: opacity(85%);"> -->
+					<iframe
+						src="https://www.youtube-nocookie.com/embed/qzJ1alTf1_A?playlist=qzJ1alTf1_A&html5=1&color=white&disablekb=1&fs=0&autoplay=1&loop=1&modestbranding=1&playsinline=1&rel=0&showinfo=0&enablejsapi=1&mute=1&controls=0"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="points columns small-10 medium-9 large-6 space-150-top">
+				<div class="row">
+					<div class="columns small-6 medium-3 space-50-right">
+						<div class="h4 font-h strong text-blue">15K+</div>
+						<div class="p space-50-bottom">Happy Customers</div>
+					</div>
+					<div class="columns small-6 medium-3 space-50-right">
+						<div class="h4 font-h strong text-blue">60+</div>
+						<div class="p space-50-bottom">Years Of Experience</div>
+					</div>
+					<div class="columns small-6 medium-3 space-50-right">
+						<div class="h4 font-h strong text-blue">12+</div>
+						<div class="p space-50-bottom">Countries Served</div>
+					</div>
+					<div class="columns small-6 medium-3 space-50-right">
+						<div class="h4 font-h strong text-blue">100+</div>
+						<div class="p space-50-bottom">Associated Brands</div>
+					</div>
+					<div class="description p columns small-12 space-50-top">Bharat Glass & Crockeries is your
+						comprehensive hospitality partner, providing Kitchenware, Glassware, Cutlery, Bar Equipment,
+						Flatware, Crockery, Buffet Ware, Banquet Equipment, Electrical Appliances, and Housekeeping
+						supplies, along with Customised Commercial Kitchens and Turnkey Project Management solutions.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Intro Section -->
+ 
+<script>
+	var typing = new Typed(".js-immigration-text", {
+		strings: ["", "Hotels", "Restaurants", "Bakery", "Catering"],
+		typeSpeed: 100,
+		backSpeed: 40,
+		loop: true,
+	});
+</script>
+
+
+
+<!-- Catalogue Section -->
+<section id="catalogue-section" class="catalogue-section space-250-top-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="columns text-center small-12 medium-10 medium-offset-1 large-6 large-offset-3">
+				<div class="h1 font-h strong text-blue text-uppercase">Catalogue</div>
+				<div class="h4 font-h text-blue-dark">Curated AI-Catalogue for your Industry!</div>
+				<div class="p space-50-top-bottom">At BGC, we recognize the unique needs of each sector. Explore our
+					customised catalogues, <span class="text-orange text-underline">Choose your Industry below</span>.
+				</div>
+			</div>
+			<div class="catalogue-tabs columns small-12 large-8 large-offset-2 space-100-top-bottom">
+				<div class="tabs row">
+					<div class="tab columns small-6 medium-3">
+						<input type="radio" id="catHotel" name="catIndustry" class="hidden">
+						<label for="catHotel" class="card text-center">
+							<img src="media/icon-hotel.png" style="width: 50%;">
+							<div class="h5 font-h text-uppercase strong space-50-top">Hotels</div>
+							<div class="label">Lorem ipsum dolor sit amet</div>
+						</label>
+					</div>
+					<div class="tab columns small-6 medium-3">
+						<input type="radio" id="catRestaurant" name="catIndustry" class="hidden">
+						<label for="catRestaurant" class="card text-center">
+							<img src="media/icon-restaurant.png" style="width: 50%;">
+							<div class="h5 font-h text-uppercase strong space-50-top" style="letter-spacing: -0.4px;">
+								Restaurant</div>
+							<div class="label">Lorem ipsum dolor sit amet</div>
+						</label>
+					</div>
+					<div class="tab columns small-6 medium-3">
+						<input type="radio" id="catBakery" name="catIndustry" class="hidden">
+						<label for="catBakery" class="card text-center">
+							<img src="media/icon-bakery.png" style="width: 50%;">
+							<div class="h5 font-h text-uppercase strong space-50-top">Bakery</div>
+							<div class="label">Lorem ipsum dolor sit amet</div>
+						</label>
+					</div>
+					<div class="tab columns small-6 medium-3">
+						<input type="radio" id="catCatering" name="catIndustry" class="hidden">
+						<label for="catCatering" class="card text-center">
+							<img src="media/icon-catering.png" style="width: 50%;">
+							<div class="h5 font-h text-uppercase strong space-50-top">Catering</div>
+							<div class="label">Lorem ipsum dolor sit amet</div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="catalogue-box columns small-12">
+				{% comment %} <iframe class="catalogue-frame" src="/catalogue/" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe> {% endcomment %}
+				<div class="shadow fill-light"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Catalogue Section -->
+
+
+
+<!-- Fabrication Section -->
+<section id="fabrication-section" class="fabrication-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				Custom Kitchen Fabrication & Equipment
+				Precision-Engineered Custom Kitchen Solutions
+				Transform your commercial kitchen spaces with our extensive range of top-tier kitchenware, bar
+				equipment, and specialised fabrication solutions. Our commitment goes beyond the ordinary – ensuring
+				that every element is meticulously crafted to suit your needs, where every detail matters, and
+				excellence is guaranteed.
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Fabrication Section -->
+
+
+
+<!-- Brands Section -->
+<section id="brands-section" class="brands-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<!-- Content Here -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Brands Section -->
+
+
+
+<!-- Legacy Section -->
+<section id="legacy-section" class="legacy-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<!-- Content Here -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Legacy Section -->
+
+
+
+<!-- Visit Section -->
+<section id="visit-section" class="visit-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<!-- Content Here -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Visit Section -->
+
+
+
+<!-- Expertise Section -->
+<section id="expertise-section" class="expertise-section space-200-top-bottom">
+	<!-- Hotel Section -->
+	<div class="hotel container-fluid" style="background-color: #f5f5f5;">
+		<div class="space-150-top space-100-bottom">
+			<div class="expertise text-center columns">
+				<div class="head space-150-bottom">
+					<div class="large-3 text-left font-h inline-middle">
+						<div class="h1 strong text-black inline">Hotels</div>
+						<div class="h6 strong line-height-medium">India’s Most Trusted Hotel Equipment Supplier and Manufacturer</div>
+					</div>
+				<div class="large-5 large-offset-2 line-height-large text-left inline-middle">At our forefront, we are dedicated to providing industry-leading solutions meticulously designed to meet and exceed the elevated standards of the hotel industry. From the heart of the kitchen to the elegance of the dining experience, our carefully curated collection showcases a commitment to quality, functionality, and sophistication.</div>
+				</div>
+				<img src="https://cdn.prod.website-files.com/5c6d6c45eaa55f57c6367749/650455d32c657d4f5298869a_x-650455c6cc031.webp" class="large-10">
+			</div>
+		</div>
+	
+		<div class="usp-table space-100-top">
+			<div class="columns text-center">
+				<table width="100%" style="border-collapse: collapse;">
+					<tbody>
+						<tr>
+							<td class="card large-6 space-100-top-bottom" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: 2px solid rgb(227, 227, 227); border-left: none; border-right: none;">
+								<div class="head h4 text-left strong space-150-left">premium kitchenware</div>
+							</td>
+							<td class="large-6 space-200-left" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: 2px solid rgb(227, 227, 227); border-left: none; border-right: none;">
+								<div class="table-column h5 space-50-top-bottom"><span class="strong">5000+</span> Products to Choose From</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="card space-100-top-bottom" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: 2px solid rgb(227, 227, 227); border-left: none; border-right: none;">
+								<div class="head h4 text-left strong text-orange space-150-left">exquisite glassware &nbsp;&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+							</td>
+							<td class="large-6 space-200-left" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: 2px solid rgb(227, 227, 227); border-left: none; border-right: none;">
+								<div class="table-column h5 space-50-top-bottom"><span class="strong">1500+</span> Products to Choose From</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="card space-100-top-bottom" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: none; border-left: none; border-right: none;">
+								<div class="head h4 text-left strong space-150-left">state-of-the-art banquet equipment</div>
+							</td>
+							<td class="large-6 space-200-left" style="border-top: 2px solid rgb(227, 227, 227); border-bottom: none; border-left: none; border-right: none;">
+								<div class="table-column h5 space-50-top-bottom"><span class="strong">500+</span> Products to Choose From</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				{% comment %} <table width="100%" style="border-collapse: collapse;">
+					<tr>
+						<td class="card space-100-top-bottom" style="border: 2px solid rgb(227, 227, 227);">
+							<div class="head h4 text-left strong space-150-left">premium kitchenware</div>
+						</td>
+						<td class="large-6 space-150-left" valign="middle" rowspan="3" style="border: 2px solid rgb(227, 227, 227);">
+							<div class="table-column h5 space-50-top-bottom"><span class="strong">5000+</span> Products to Choose From</div>
+							<div class="table-column h5 space-50-top-bottom"><span class="strong">1500+</span> Products to Choose From</div>
+							<div class="table-column h5 space-50-top-bottom"><span class="strong">500+</span> Products to Choose From</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="card space-100-top-bottom" style="border: 2px solid rgb(227, 227, 227);">
+							<div class="head h4 text-left strong text-orange space-150-left">exquisite glassware &nbsp;&nbsp;<i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="card space-100-top-bottom" style="border: 2px solid rgb(227, 227, 227);">
+							<div class="head h4 text-left strong space-150-left">state-of-the-art banquet equipment</div>
+						</td>
+					</tr>
+				</table> {% endcomment %}
+
+			</div>
+		</div>
+	</div>
+	<div class="p large-8 large-offset-2 line-height-large text-center space-200-top-bottom">At our forefront, we are dedicated to providing industry-leading solutions meticulously designed to meet and exceed the elevated standards of the hotel industry. From the heart of the kitchen to the elegance of the dining experience, our carefully curated collection showcases a commitment to quality, functionality, and sophistication.</div>
+	
+
+	<!-- Turnkey Solutions -->
+	<div class="turnkey container-fluid">
+		<div class="row space-200-top-bottom" style="background-color: #f5f5f5;">
+			<div class="expertise columns">
+				<div class="large-6 inline-middle">
+					<img src="/media/turnkey-image.jpg" alt="Turnkey solutions">
+					<div class="head large-offset-5 space-100-top">
+						<div class="h3 strong text-black line-height-small">turnkey solutions</div>
+						<div class="p line-height-medium space-25-top">Transform your vision into reality with our comprehensive turnkey solutions. We handle every aspect of your hotel project, from</div>
+					</div>
+				</div>
+				<div class="large-4 large-offset-1 inline-middle">
+					<div class="cards">
+						<div class="card space-50-top-bottom">
+							<div class="h6 strong large-9 space-200-top-bottom radius-50 text-center fill-neutral-1">
+								<i class="fa-solid fa-list-check"></i>
+								<div class="space-25-top">Planning</div>
+							</div>
+						</div>
+						<div class="card space-50-top-bottom">
+							<div class="h6 strong large-9 space-200-top-bottom radius-50 text-center fill-neutral-1">
+								<i class="fa-solid fa-pen-nib"></i>
+								<div class="space-25-top">Design</div>
+							</div>
+						</div>
+						<div class="card space-50-top-bottom">
+							<div class="h6 strong large-9 space-200-top-bottom radius-50 text-center fill-neutral-1">
+								<i class="fa-solid fa-diagram-project"></i>
+								<div class="space-25-top">Project Management</div>
+							</div>
+						</div>
+						<div class="card space-50-top-bottom">
+							<div class="h6 strong large-9 space-200-top-bottom radius-50 text-center fill-neutral-1">
+								<i class="fa-solid fa-briefcase"></i>
+								<div class="space-25-top">Execution</div>
+							</div>
+						</div>
+					</div>
+					<div class="para p large-9 space-50-top text-justify line-height-large">With a focus on quality and sophistication, we provide an extensive range of premium kitchenware, exquisite glassware, and state-of-the-art banquet equipment, ensuring that every detail meets the highest standards of the hospitality industry.</div>
+				</div>
+			</div>
+		</div>
+		<div class="p large-8 large-offset-2 line-height-large text-center space-200-top-bottom">Simply share your project with us, and we’ll deliver a fully functioning hotel that exceeds your expectations. Trust in our expertise to elevate your hospitality experience to new heights.</div>
+	</div>
+
+
+	{% comment %} <div class="expertise row space-150-top-bottom">
+		<div id="restaurant" class="info columns small-12 large-6">
+			<div class="h2 strong font-h text-orange">Restaurant</div>
+			<div class="h6 strong font-h space-50-bottom">Crafting Experiences</div>
+			<div class="p space-50-bottom">Revitalize dining spaces with our exquisite selection of cutlery,
+				crockery, and bar equipment, infusing every restaurant setting with a touch of sophistication. Our
+				carefully curated collections reflects a commitment to elevating the overall dining experience,
+				blending aesthetics seamlessly with functionality. Additionally, explore our expert menu planning
+				services, where creativity meets functionality to ensure a perfect culinary blend. From
+				conceptualizing innovative dishes to optimizing resource utilization, we are dedicated to making
+				your culinary vision a reality.</div>
+		</div>
+		<div class="thumbnail space-50-top columns small-12 large-5 large-offset-1">
+			<img class="block radius-25" src="https://images.pexels.com/photos/11295869/pexels-photo-11295869.jpeg" style="box-shadow: 0 0 1px 1px rgba(246, 147, 26, 0.2), 0 0 var(--space-200) 0px rgba(246, 147, 26, 0.3);">
+		</div>
+	</div>
+
+	<div class="expertise row space-150-top-bottom">
+		<div id="bakery" class="info columns small-12 large-6">
+			<div class="h2 strong font-h text-blue">Bakery</div>
+			<div class="h6 strong font-h space-50-bottom">A Taste of Perfection</div>
+			<div class="p space-50-bottom">Perfect your culinary creations with our top-notch kitchen and baking
+				equipment, guaranteeing that your bakery stands out with unparalleled quality and precision. Our
+				carefully selected range of products reflects a commitment to enhancing the art of baking, combining
+				functionality with excellence. Explore a world of possibilities as you perfect your craft, from
+				premium bakeware to high-quality kitchen essentials. Additionally, our experts guidance and support
+				will ensure your bakery not only meets but exceeds the highest standards.</div>
+		</div>
+		<div class="thumbnail space-50-top columns small-12 large-5 large-offset-1">
+			<img class="block radius-25" src="https://images.pexels.com/photos/4252146/pexels-photo-4252146.jpeg" style="box-shadow: 0 0 1px 1px rgba(0, 102, 255, 0.2), 0 0 var(--space-200) 0px rgba(0, 102, 255, 0.3);">
+		</div>
+	</div>
+
+	<div class="expertise row space-150-top-bottom">
+		<div id="catering" class="info columns small-12 large-6">
+			<div class="h2 strong font-h text-orange">Catering</div>
+			<div class="h6 strong font-h space-50-bottom">Seamless Event Mastery</div>
+			<div class="p space-50-bottom">Streamline your catering operations with our extensive range, spanning
+				elegant buffet ware to advanced electrical appliances, providing the indispensable tools for a
+				seamless and successful catering experience. From stylish presentation to efficient food
+				preparation, our carefully curated collections are designed to elevate every aspect of your catering
+				service. Trust us as your dedicated partner in delivering exceptional experiences, where precision
+				and convenience converge to make every event a resounding success.</div>
+		</div>
+		<div class="thumbnail space-50-top columns small-12 large-5 large-offset-1">
+			<img class="block radius-25" src="https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg" style="box-shadow: 0 0 1px 1px rgba(246, 147, 26, 0.2), 0 0 var(--space-200) 0px rgba(246, 147, 26, 0.3);">
+		</div>
+	</div> {% endcomment %}
+
+
+</section>
+<!-- End: Expertise Section -->
+
+
+
+<!-- CTA Section -->
+<section id="cta-section" class="cta-section space-200-top">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12 large-6">
+				<div class="heading">
+					<div class="h2 font-h space-50-bottom text-blue"><span class="strong text-blue-dark">Elevate your
+							operation with tailored:</span> End-to-end Ho.Re.Ca Solutions</div>
+					<div class="p space-75-bottom" style="width: 75%;">Complete the form below to initiate the
+						conversation and embark on a journey towards greater success.</div>
+				</div>
+			</div>
+			{% comment %} <div class="columns small-12 large-5 large-offset-1">
+				<div class="form-box fill-blue-dark-dark light-blue-light-light radius-25 space-50"
+					style="box-shadow: 0 0 1px 1px rgba(0, 102, 255, 0.2), 0 0 var(--space-200) 0px rgba(0, 102, 255, 0.3);">
+					<!-- https://docs.google.com/forms/d/e/1FAIpQLScwVGA7s0ndpD6lX7rQNbFu0yQvPlEZrwwYYkqmebG2FJFR2g/viewform?usp=sf_link -->
+					<!-- <form action="https://formspree.io/f/xwkgbone" method="POST"> -->
+					<form id="homeGeneralLeads"
+						action="https://docs.google.com/forms/d/e/1FAIpQLSeG6nfZX6S_nq29su85Olfx_5UT31lj8Mj50WJIwbrVa1wPTw/formResponse"
+						method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<div class="columns small-12 space-25">
+								<div class="h4">Tell Us About Yourself:</div>
+							</div>
+							<div class="columns small-12 large-6 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min fill-blue-dark-dark">Full
+										Name <span class="text-orange">*</span></span>
+									<!-- <input type="text" name="egim_fullname" required class="input-field block"> -->
+									<input type="text" name="entry.1421501943" required class="input-field block">
+								</label>
+							</div>
+							<div class="columns small-12 large-6 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min fill-blue-dark-dark">Email
+										ID <span class="text-orange">*</span></span>
+									<!-- <input type="text" name="egim_emailid" required class="input-field block"> -->
+									<input type="text" name="entry.839199106" required class="input-field block">
+								</label>
+							</div>
+							<div class="columns small-12 large-6 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min fill-blue-dark-dark">Phone
+										Number <span class="text-orange">*</span></span>
+									<!-- <input type="text" name="egim_phonenumber" required class="input-field block"> -->
+									<input type="text" name="entry.636038964" required class="input-field block">
+								</label>
+							</div>
+							<div class="columns small-12 large-6 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min fill-blue-dark-dark">Industry</span>
+									<!-- <input type="text" name="egim_country" class="input-field block"> -->
+									<!-- <select name="egim_country" class="input-field block"> -->
+									<select name="entry.203903897" class="input-field block">
+										<option value="blank" disabled="disabled" selected="selected">Select</option>
+										<option value="Hotel">Hotel</option>
+										<option value="Restaurant">Restaurant</option>
+										<option value="Bakery">Bakery</option>
+										<option value="Catering">Catering</option>
+										<option value="Cloud Kitchen">Cloud Kitchen</option>
+										<option value="Others">Others</option>
+									</select>
+								</label>
+							</div>
+							<div class="columns small-12 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min fill-blue-dark-dark">message</span>
+									<!-- <input type="text" name="egim_purpose" class="input-field block"> -->
+									<!-- <input type="text" name="entry.677688100" class="input-field block"> -->
+									<textarea class="input-field block" name="entry.1788879696"></textarea>
+								</label>
+							</div>
+							<div class="columns small-12 space-25">
+								<label class="block">
+									<span
+										class="label form-label text-uppercase inline cursor-pointer space-min invisible">Submit</span>
+									<button class="button fill-blue block" type="submit">Request a Call Back</button>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div> {% endcomment %}
+		</div>
+	</div>
+</section>
+<!-- End: CTA Section -->
+
+
+
+<!-- Features Section -->
+<section id="features-section" class="features-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<!-- Content Here -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Features Section -->
+
+
+
+<!-- Contact Section -->
+<section id="contact-section" class="contact-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<!-- Content Here -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End: Contact Section -->
+
+
+
+
+
+<!-- Blank Section -->
+<section id="blank-section" class="blank-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Blank Section -->
+
+
+
+<!-- Sample Section -->
+<section id="sample-section" class="sample-section">
+	<div class="container">
+		<div class="row">
+			<div class="columns small-12">
+				<div class="h3">Typography:</div>
+				<div class="h1 strong">Lorem ipsum, dolor sit amet consectetur.</div>
+				<div class="h2 strong">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="h3 strong">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="h4 strong">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="h5 strong">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="h6">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="p">Lorem ipsum dolor, sit amet consectetur,.</div>
+				<div class="label">Lorem ipsum dolor sit amet consectetur.</div>
+				<div class="small space-25-bottom">Lorem, ipsum dolor sit amet consectetur.</div>
+				{% comment %} <ul>
+					{% for variations in products.variations %}
+					<li>
+						<div class="label strong">{{ variations.variation_name }}</div>
+						<div class="label">{{ variations.brand }}</div>
+						<div class="label">{{ variations.category }}</div>
+						<div class="label">{{ variations.price }}</div>
+						{% for attributes in variations.attributes %}
+						<div class="label">{{ attributes.attr_name }} : {{ attributes.attr_value }}</div>
+						{% endfor %}
+					</li>
+					{% endfor %}
+				</ul> {% endcomment %}
+				<a class="button fill-blue" href="https://google.com">Search</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END: Sample Section -->
+
+
+
+
+{% include 'parts/footer.liquid' %}
+{% include 'parts/foot.liquid' %}

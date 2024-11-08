@@ -1,0 +1,20 @@
+<h1>Fetch Categories</h1>
+<p>Click the button below to download the categories JSON file.</p>
+<p><button id="fetch-categories">Fetch Categories</button></p>
+<script>
+  document.getElementById('fetch-categories').addEventListener('click', function () {
+    fetch('http://localhost:3000/categories')
+      .then(response => response.json())
+      .then(data => {
+        const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = 'categories.json';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      });
+  });
+</script>

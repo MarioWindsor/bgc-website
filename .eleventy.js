@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("media"); // Copy `media/` to `_site/media`
 	eleventyConfig.addPassthroughCopy("admin"); // Copy `admin/` to `_site/admin`
 	eleventyConfig.addPassthroughCopy("variations"); // Copy `admin/` to `_site/admin`
-	eleventyConfig.addPassthroughCopy("js"); // Copy `JS/` to `_site/JS`
+	eleventyConfig.addPassthroughCopy("js"); // Copy `js/` to `_site/js`
 	eleventyConfig.addPassthroughCopy("sitemap.xml");
 	eleventyConfig.addPassthroughCopy("robots.txt");
 

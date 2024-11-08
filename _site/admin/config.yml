@@ -1,35 +1,33 @@
 backend:
+  # Use netlify identity as backend
+  branch: main
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to main)
-# publish_mode: editorial_workflow
-media_folder: "/media/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/media/uploads" # The src attribute for uploaded media will begin with /images/uploads
+  repo: aryansrivastav1/bgc-website
+media_folder: "/media/"
+public_folder: "/media/"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+
 collections:
-  - name: "services"
-    label: "Services"
-    folder: "services"
-    create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    sortable_fields: ['date', 'title']
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["service"] }
-      - { label: "Heading", name: "heading", widget: "string" }
-      - { label: "Short Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Content", name: "content", widget: "markdown", required: false}
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
-    create: true
-    slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    sortable_fields: ['commit_date', 'title']
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["service"] }
-      - { label: "Heading", name: "heading", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Content", name: "content", widget: "markdown" }
+  # Details Collection
+  - name: "details"
+    label: "Details"
+    editor:
+      preview: false
+    files:
+      - label: "Fetch Variations"
+        name: "fetch_variations"
+        file: "admin/src/variations/variations.md"
+        fields:
+          - { label: "Button", name: "fetch_variations_button", widget: "hidden", default: "Fetch Variations" }
+          - { label: "Variations URL", name: "variations_url", widget: "string", default: "http://localhost:3000/variations" }
+          - { label: "Description", name: "description", widget: "string", default: "Click the button below to fetch variations JSON." }
+
+      - label: "Fetch Categories"
+        name: "fetch_categories"
+        file: "admin/src/categories/categories.md"
+        fields:
+          - { label: "Button", name: "fetch_categories_button", widget: "hidden", default: "Fetch Categories" }
+          - { label: "Categories URL", name: "categories_url", widget: "string", default: "http://localhost:3000/categories" }
+          - { label: "Description", name: "description", widget: "string", default: "Click the button below to fetch categories JSON." }

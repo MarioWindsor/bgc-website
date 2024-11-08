@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script>
+      // Fetch the /admin endpoint to log in
+      fetch("/admin")
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            // Store access token and user ID in local storage
+            localStorage.setItem("accessToken", data.accessToken);
+            localStorage.setItem("userId", data.userId);
+            localStorage.setItem("loggedIn", data.loggedIn);
+
+            console.log("Access Token:", data.accessToken);
+            console.log("User ID:", data.userId);
+            console.log("Logged In:", data.loggedIn);
+
+            // Redirect to your dashboard or perform other actions
+            window.location.href = "http://localhost:8080/admin"; // Adjust as needed
+          } else {
+            console.error("Login failed:", data.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error logging in:", error);
+        });
+    </script>
+  </head>
+  <body>
+    <h1>Logging in...</h1>
+  </body>
+</html>

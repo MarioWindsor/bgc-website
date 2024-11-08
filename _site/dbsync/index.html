@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+
+	<title>Database Sync</title>
+	<base href="/">
+
+	<!-- Metadata -->
+	<!-- Short description of the document (limit to 150 characters) -->
+	<!-- This content *may* be used as a part of search engine results. -->
+	<meta name="description"
+		content="Bharat Glass & Crockeries is your comprehensive hospitality partner, providing Kitchenware, Glassware, Cutlery, Bar Equipment, Flatware, Crockery, Buffet Ware, Banquet Equipment, Electrical Appliances, and Housekeeping supplies, along with Customised Commercial Kitchens and Turnkey Project Management solutions.">
+
+	<!-- Authors -->
+	<!-- Links to information about the author(s) of the document -->
+	<meta name="author" content="Bharat Glass & Crockeries">
+	<link rel="author" href="humans.txt">
+
+	<!-- SEO -->
+	<!-- Control the behavior of search engine crawling and indexing -->
+	<meta name="robots" content="index,follow"><!-- All Search Engines -->
+	<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="media/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="media/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="media/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="media/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="media/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="media/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+	<link rel="manifest" href="media/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#444444">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+	<!-- ~ iOS ~ -->
+	<!-- Disable automatic detection and formatting of possible phone numbers -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- Launch Screen Image -->
+	<!-- <link rel="apple-touch-startup-image" href="/path/to/launch.png"> -->
+	<!-- Launch Icon Title -->
+	<meta name="apple-mobile-web-app-title" content="Database Sync">
+	<!-- Enable standalone (full-screen) mode -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<!-- ~ Android ~ -->
+	<!-- Add to home screen -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+	<!-- Social -->
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Database Sync">
+	<meta property="og:description"
+		content="Bharat Glass & Crockeries is your comprehensive hospitality partner, providing Kitchenware, Glassware, Cutlery, Bar Equipment, Flatware, Crockery, Buffet Ware, Banquet Equipment, Electrical Appliances, and Housekeeping supplies, along with Customised Commercial Kitchens and Turnkey Project Management solutions.">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+
+	<!-- Schema.org / Google+ -->
+	<meta itemprop="name" content="Database Sync">
+	<meta itemprop="description"
+		content="Bharat Glass & Crockeries is your comprehensive hospitality partner, providing Kitchenware, Glassware, Cutlery, Bar Equipment, Flatware, Crockery, Buffet Ware, Banquet Equipment, Electrical Appliances, and Housekeeping supplies, along with Customised Commercial Kitchens and Turnkey Project Management solutions.">
+	<meta itemprop="image" content=" ">
+
+	<!-- Stylesheet -->
+	<!-- Base -->
+	<link rel="stylesheet" type="text/css" href="css/1_normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/2_base.css">
+	<link rel="stylesheet" type="text/css" href="css/3_grid.css">
+	<link rel="stylesheet" type="text/css" href="css/4_helper.css">
+	<link rel="stylesheet" type="text/css" href="css/5_stylescape.css">
+
+	<!-- Modules -->
+	<link rel="stylesheet" type="text/css" href="css/modules/video-embed.css">
+	<link rel="stylesheet" type="text/css" href="css/modules/modal-box.css">
+
+	<!-- Pages + Sections + Modals -->
+	<link rel="stylesheet" type="text/css" href="css/pages/page.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/home.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/catalogue.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/modal/modal-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/pages/section/sample-section.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rajdhani:wght@400;700&display=swap"
+		rel="stylesheet">
+	<!-- Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Typing JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+		integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+		crossorigin="anonymous"></script>
+	<!-- Smooth Scroll JS -->
+
+    <!-- Include CMS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
+
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Axios CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="body" id="body">
+
+	<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<script>
+		netlifyIdentity.init();
+
+		// Check if the user is logged in
+		const user = netlifyIdentity.currentUser();
+		if (user) {
+			console.log('User is logged in:', user);
+			// console.log(window.netlifyIdentity.currentUser().user_metadata.full_name);
+		} else {
+			console.log('User is not logged in');
+		}
+	</script>
+
+
+	<!--  ★  MARKUP GOES HERE  ★  -->
+
+	<div id="page-wrapper"><!-- Page Wrapper -->
+
+		<!-- Navigation -->
+
+		<div id="page-content"><!-- Page Content -->
+
+
+<!-- Netlify Identity Login Status -->
+<div data-netlify-identity-menu class="float-right"></div><br>
+
+<section class="container">
+    <div class="row space-100">
+        <!-- Individual Data -->
+        <div class="individual-fetch large-4 columns space-200-left">
+            <div class="h6 strong text-orange space-min-bottom text-uppercase">fetch data</div>
+
+            <!-- Categories History -->
+            <div class="custom-dropdown select-wrapper position-relative space-25-top-bottom" style="width: 300px;">
+                <a id="latest-category-link"
+                    class="fetch-link cursor-pointer position-absolute fill-orange text-white space-50-left-right radius-min"
+                    href="http://192.168.0.157:3000/categories" target="_blank">Fetch Latest</a>
+                <label title="Select version to open" id="categories-label"
+                    class="dropdown-label strong large-12 fill-blue cursor-pointer block space-50 radius-min">
+                    CATEGORIES <span style="float: right;">&#9662;</span></label>
+                <div id="categories-history" class="dropdown-content hidden">
+                    <!-- File list will be populated here -->
+                </div>
+            </div><br>
+
+            <!-- Products History -->
+            <div class="custom-dropdown select-wrapper position-relative space-25-top-bottom" style="width: 300px;">
+                <a id="latest-product-link"
+                    class="fetch-link cursor-pointer position-absolute fill-orange text-white space-50-left-right radius-min"
+                    href="http://192.168.0.157:3000/variations" target="_blank">Fetch Latest</a>
+                <label title="Select version to open" id="products-label"
+                    class="dropdown-label strong large-12 fill-blue cursor-pointer block space-50 radius-min"> PRODUCTS
+                    <span style="float: right;">&#9662;</span></label>
+                <div id="products-history" class="dropdown-content hidden">
+                    <!-- File list will be populated here -->
+                </div>
+            </div><br>
+
+            <!-- Users History -->
+            <div class="custom-dropdown select-wrapper position-relative space-25-top-bottom" style="width: 300px;">
+                <a id="latest-user-link"
+                    class="fetch-link cursor-pointer position-absolute fill-orange text-white space-50-left-right radius-min"
+                    href="http://192.168.0.157:3000/users" target="_blank">Fetch Latest</a>
+                <label title="Select version to open" id="users-label"
+                    class="dropdown-label strong large-12 fill-blue cursor-pointer block space-50 radius-min"> USERS
+                    <span style="float: right;">&#9662;</span></label>
+                <div id="users-history" class="dropdown-content hidden">
+                    <!-- File list will be populated here -->
+                </div>
+            </div><br>
+        </div>
+
+        <div class="mid-space large-3 columns"></div>
+
+        <!-- Master Data -->
+        <div class="master-fetch large-4 columns space-50-right">
+            <div class="h6 strong text-orange space-min-bottom text-uppercase">master data</div>
+
+            <!-- Categories Merge -->
+            <div class="select-wrapper position-relative space-25-top-bottom" style="width: 300px;">
+                <select title="Select any category version" id="categories-merge" class="strong fill-blue large-12">
+                    <option class="text-neutral-1" disabled selected>CATEGORIES</option>
+                </select>
+            </div><br>
+
+            <!-- Products Merge -->
+            <div class="select-wrapper position-relative space-25-top-bottom" style="width: 300px;">
+                <select title="Select any product version" id="products-merge" class="strong fill-blue large-12">
+                    <option class="text-neutral-1" disabled selected>PRODUCTS</option>
+                </select>
+            </div><br>
+
+            <!-- Users Merge -->
+            
+
+            <button id="merge-button" class="merge-button text-uppercase fill-orange float-right">merge</button>
+        </div>
+
+        <!-- Spinner -->
+        <div id="spinner" class="text-center" style="display: none;">
+            <div class="spinner"></div>
+            <div class="p space-50-top">Generating master data, please wait...</div>
+        </div>
+
+        <!-- Toast -->
+        
+    </div>
+</section>
+
+
+<script>
+    // Fetching the history data
+    fetch('http://192.168.0.157:3000/history')
+        .then(response => response.json())
+        .then(data => {
+            const history = data.history;
+            populateHistory(history);
+            populateMergeSelects(history);
+        })
+        .catch(error => {
+            console.error('Error fetching history:', error);
+        });
+
+    // Populate History Function
+    function populateHistory(history) {
+        // Categories
+        const categoriesDiv = document.getElementById('categories-history');
+        categoriesDiv.innerHTML = '';
+        history.categories.forEach(file => {
+            const item = document.createElement('div');
+            item.classList.add('dropdown-item');
+            item.classList.add('fill-blue');
+            item.textContent = file;
+            item.addEventListener('click', () => {
+                window.open(`http://192.168.0.157:3000/data/categories/${file}`, '_blank');
+            });
+            categoriesDiv.appendChild(item);
+        });
+
+        // Products
+        const productsDiv = document.getElementById('products-history');
+        productsDiv.innerHTML = '';
+        history.variations.forEach(file => {
+            const item = document.createElement('div');
+            item.classList.add('dropdown-item');
+            item.classList.add('fill-blue');
+            item.textContent = file;
+            item.addEventListener('click', () => {
+                window.open(`http://192.168.0.157:3000/data/variations/${file}`, '_blank');
+            });
+            productsDiv.appendChild(item);
+        });
+
+        // Users
+        // const usersDiv = document.getElementById('users-history');
+        // usersDiv.innerHTML = '';
+        // history.users.forEach(file => {
+        //     const item = document.createElement('div');
+        //     item.classList.add('dropdown-item');
+        //     item.classList.add('fill-blue');
+        //     item.textContent = file;
+        //     item.addEventListener('click', () => {
+        //         window.open(`http://192.168.0.157:3000/data/users/${file}`, '_blank');
+        //     });
+        //     usersDiv.appendChild(item);
+        // });
+
+        setupDropdownToggles();
+    }
+
+    // Setup the toggle behavior for each dropdown
+    function setupDropdownToggles() {
+        const categoriesLabel = document.getElementById('categories-label');
+        const productsLabel = document.getElementById('products-label');
+        // const usersLabel = document.getElementById('users-label');
+
+        const categoriesHistory = document.getElementById('categories-history');
+        const productsHistory = document.getElementById('products-history');
+        // const usersHistory = document.getElementById('users-history');
+
+        categoriesLabel.addEventListener('click', () => toggleDropdown(categoriesHistory, categoriesLabel));
+        productsLabel.addEventListener('click', () => toggleDropdown(productsHistory, productsLabel));
+        // usersLabel.addEventListener('click', () => toggleDropdown(usersHistory, usersLabel));
+    }
+
+    // Function to toggle dropdown visibility
+    function toggleDropdown(dropdown, label) {
+        const isVisible = dropdown.classList.contains('visible');
+
+        // Set an explicit max-height so the transition applies on the first click
+        if (!dropdown.style.maxHeight) {
+            dropdown.style.maxHeight = '0';
+        }
+
+        // Show/Hide the clicked dropdown without affecting others
+        if (!isVisible) {
+            dropdown.classList.remove('hidden');
+            dropdown.classList.add('visible');
+            label.classList.add('active');
+            dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+        } else {
+            dropdown.classList.remove('visible');
+            dropdown.style.maxHeight = '0';
+            label.classList.remove('active');
+        }
+
+        // Ensure dropdown gets hidden completely after transition
+        dropdown.addEventListener('transitionend', () => {
+            if (dropdown.style.maxHeight === '0px') {
+                dropdown.classList.add('hidden');
+            }
+        }, { once: true });
+    }
+
+    // Populate merge selects
+    const populateMergeSelects = (history) => {
+        const categoriesMergeSelect = document.getElementById('categories-merge');
+        const productsMergeSelect = document.getElementById('products-merge');
+        // const usersMergeSelect = document.getElementById('users-merge');
+
+        // Clear existing options except the default one
+        categoriesMergeSelect.innerHTML = '<option class="text-neutral-1" disabled selected>CATEGORIES</option>';
+        productsMergeSelect.innerHTML = '<option class="text-neutral-1" disabled selected>PRODUCTS</option>';
+        // usersMergeSelect.innerHTML = '<option class="text-neutral-1" disabled selected>USERS</option>';
+
+        // Populate categories
+        history.categories.forEach(file => {
+            const option = document.createElement('option');
+            option.textContent = file;
+            option.value = file;
+            categoriesMergeSelect.appendChild(option);
+        });
+
+        // Populate products
+        history.variations.forEach(file => {
+            const option = document.createElement('option');
+            option.textContent = file;
+            option.value = file;
+            productsMergeSelect.appendChild(option);
+        });
+
+        // Populate users
+        // history.users.forEach(file => {
+        //     const option = document.createElement('option');
+        //     option.textContent = file;
+        //     option.value = file;
+        //     usersMergeSelect.appendChild(option);
+        // });
+    };
+
+    // Merge Button Click Event
+    document.getElementById('merge-button').addEventListener('click', function () {
+        // Get selected values from dropdowns
+        const categoriesMerge = Array.from(document.getElementById('categories-merge').selectedOptions).map(option => option.value);
+        const productsMerge = Array.from(document.getElementById('products-merge').selectedOptions).map(option => option.value);
+        // const usersMerge = Array.from(document.getElementById('users-merge').selectedOptions).map(option => option.value);
+
+        // if (!categoriesMerge.length || !productsMerge.length || !usersMerge.length) {
+        if (!categoriesMerge.length || !productsMerge.length) {
+            alert('Please select all categories, products, and users before merging.');
+            return;
+        }
+
+        // Show the spinner before starting the fetch
+        document.getElementById('spinner').style.display = 'block';
+
+        // Fetch the master endpoint without query parameters
+        fetch('http://192.168.0.157:3000/master', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                categories: categoriesMerge,
+                products: productsMerge,
+                // users: usersMerge
+            })
+        })
+            .then(response => {
+                console.log('Fetch response:', response); // Log the full response for debugging
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then(data => {
+                let message;
+                if (data.success) {
+                    message = "Files have been saved successfully!";
+                    showToast(message, 'success'); // Show success toast
+                } else {
+                    throw new Error("Failed to merge data.");
+                }
+            })
+            .catch(error => {
+                console.error('Error merging data:', error); // Log the error
+                if (error instanceof TypeError) {
+                    console.error('Network error or CORS issue');
+                }
+                showToast("Error merging data. Please check the console for more details.", 'error');
+            })
+            .finally(() => {
+                document.getElementById('spinner').style.display = 'none';
+                // Reset selections
+                document.getElementById('categories-merge').selectedIndex = 0;
+                document.getElementById('products-merge').selectedIndex = 0;
+                // document.getElementById('users-merge').selectedIndex = 0;
+            });
+    });
+
+    // Function to show the toast notification
+    // function showToast(message, type = 'success') {
+    //     const toast = document.getElementById('toast');
+    //     console.log(message); // Debug log
+
+    //     // Set the toast message
+    //     toast.textContent = message;
+
+    //     // Apply color based on success or error
+    //     if (type === 'error') {
+    //         toast.style.backgroundColor = '#dc3545'; // Red for error
+    //     } else {
+    //         toast.style.backgroundColor = '#28a745'; // Green for success
+    //     }
+
+    //     // Display the toast
+    //     toast.style.display = 'block';
+    //     toast.classList.add('show');
+
+    //     // Hide toast after 3 seconds
+    //     setTimeout(() => {
+    //         toast.classList.remove('show');
+    //         toast.style.display = 'none';
+    //     }, 3000);
+    // }
+</script>
+
+
+
+<!-- Style -->
+<style>
+    .fetch-link {
+        top: 20px;
+        left: 130px;
+    }
+
+    .fetch-link:hover {
+        color: #ededed;
+    }
+
+    .spinner {
+        margin: auto;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border-left-color: #09f;
+        animation: spin 1s ease infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* .toast {
+        visibility: hidden;
+        max-width: 50%;
+        margin: 0 auto;
+        background-color: #28a745;
+        color: white;
+        text-align: center;
+        border-radius: 4px;
+        padding: 12px;
+        position: fixed;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999999;
+    }
+
+    .toast.show {
+        visibility: visible;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 10%;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            bottom: 10%;
+            opacity: 1;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    } */
+
+    .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .dropdown-content.visible {
+        max-height: 300px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .dropdown-item {
+        padding: 13px 20px 13px 15px;
+        cursor: pointer;
+        font-size: 13px;
+        transition: all 0.1s;
+    }
+
+    .dropdown-item:hover {
+        background-color: #24afff;
+    }
+
+    .dropdown-label {
+        border-radius: 5px;
+    }
+
+    .dropdown-label.active {
+        border-radius: 5px 5px 0 0;
+    }
+</style>
+
+
+</div><!-- END: Page Content -->
+
+</div><!-- END: Page Wrapper -->
+
+<!-- ⬇ All Modals below this point ⬇ -->
+
+<div id="modal-wrapper"><!-- Modal Wrapper -->
+	<div class="modal-box js_modal_box">
+		<!-- Modal Content : Sample Video -->
+		<div class="modal-box-content js_modal_box_content" data-mod-id="sample-video">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<!-- video embed -->
+						<div class="video-embed js_video_embed" data-src="lncVHzsc_QA">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- END : Sample Video -->
+
+		<!-- Modal Content : Sample Form -->
+		<div class="hidden modal-box-content js_modal_box_content" data-mod-id="sample-form">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<h2>Form Title Goes Here</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- video embed -->
+					<div class="columns small-12">
+						<div class="video-embed js_video_embed" data-src="lncVHzsc_QA">
+							<div class="video-loading-indicator"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns small-12">
+						<!-- <p>Sample text</p> -->
+					</div>
+				</div>
+			</div>
+		</div><!-- END : Sample Form -->
+
+
+		<!-- Modal Close Button -->
+		<div class="modal-close js_modal_close">&times;</div>
+	</div>
+
+</div><!-- END : Modal Wrapper -->
+
+<!--  ☠  MARKUP ENDS HERE  ☠  -->
+
+
+<script type="text/javascript" src="/js/video_embed.js"></script>
+
+
+
+<script type="text/javascript">
+	/* -- Smooth Scolling -- */
+	// document.addEventListener("DOMContentLoaded", makeLinksSmooth);
+	// function makeLinksSmooth() { 
+	// 	const navLinks = document.querySelectorAll("a.js_smooth"); 
+
+	// 	navLinks.forEach((link) => {
+	// 		link.addEventListener("click", smoothScroll);
+	// 	});
+	// }
+	// function smoothScroll(e) {
+	// 	e.preventDefault();
+	// 	const targetId = this.getAttribute("href");
+	// 	const targetElement = document.querySelector(targetId);
+
+	// 	if (targetElement) { 
+	// 		// targetElement.scrollIntoView({ behavior: "smooth", block: "end" }); 
+	// 		Jump(targetElement);
+	// 	}
+	// }
+
+	document.addEventListener("DOMContentLoaded", menuToggle);
+	function menuToggle() {
+		const navLinks = document.querySelectorAll(".js_menu");
+
+		navLinks.forEach((link) => {
+			link.addEventListener("click", function () {
+				var nextAnchor = link.nextElementSibling;
+
+				// Check if the next sibling is an anchor and trigger click
+				if (nextAnchor && nextAnchor.tagName === 'A') {
+					nextAnchor.click();
+				}
+			});
+		});
+	}
+
+
+	// function menuTrigger(trig){
+	// 	console.log("menu trigger");
+	// 	const nextElement = trig.nextElementSibling;
+	// 	console.log(nextElement);
+	// 	nextElement.click();
+	// }
+</script>
+
+
+<script>
+	/* Form 1 */
+	document.addEventListener("DOMContentLoaded", function () {
+		var form = document.getElementById("homeGeneralLeads");
+		form.addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent default form submission
+
+			// Collect form data
+			var formData = new FormData(form);
+
+			// Convert formData to URL encoded string
+			var urlEncodedData = new URLSearchParams(formData).toString();
+
+			// Define endpoint URL
+			var endpoint = "http://192.168.0.157:3000/check-user";
+
+			// Fetch API POST request
+			fetch(endpoint, {
+				method: "POST",
+				mode: "cors",
+				credentials: "include",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded"
+				},
+				body: urlEncodedData
+			})
+				.then(response => {
+					if (!response.success) {
+						throw new Error("Network response was Unsuccessful");
+					}
+					return response.text();
+				})
+				.then(data => {
+					// Handle success response
+					console.log("success:", data);
+					// You can handle the success response here
+					// For example, display a success message to the user
+				})
+				.catch(error => {
+					// Handle error
+					console.error("error:", error);
+					// Handle the error response here
+					// For example, display an error message to the user
+				});
+			form.classList.add("thank-you");
+		});
+	});
+</script>
+
+<script>
+	/* Form 2 */
+	document.addEventListener("DOMContentLoaded", function () {
+		var form = document.getElementById("egBusinessLeads");
+		form.addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent default form submission
+
+			// Collect form data
+			var formData = new FormData(form);
+
+			// Convert formData to URL encoded string
+			var urlEncodedData = new URLSearchParams(formData).toString();
+
+			// Define endpoint URL
+			var endpoint = "http://192.168.0.157:3000/check-user";
+
+			// Fetch API POST request
+			fetch(endpoint, {
+				method: "POST",
+				mode: "cors",
+				credentials: "include",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded"
+				},
+				body: urlEncodedData
+			})
+				.then(response => {
+					if (!response.success) {
+						throw new Error("Network response was Unsuccessful");
+					}
+					return response.text();
+				})
+				.then(data => {
+					// Handle success response
+					console.log("success:", data);
+					// You can handle the success response here
+					// For example, display a success message to the user
+				})
+				.catch(error => {
+					// Handle error
+					console.error("error:", error);
+					// Handle the error response here
+					// For example, display an error message to the user
+				});
+			form.classList.add("thank-you");
+		});
+	});
+</script>
+
+
+<!-- Local Storage -->
+<script>
+  const loginUser = async () => {
+    try {
+      const response = await fetch('http://192.168.0.157:3000/admin');
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        localStorage.setItem('accessToken', data.accessToken);
+        localStorage.setItem('userId', data.userId);
+        localStorage.setItem('loggedIn', 'true');
+      } else {
+        console.error(data.error || "Login failed");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+    }
+  };
+
+  window.onload = () => {
+    // Check if already logged in
+    if (!localStorage.getItem('loggedIn')) {
+      loginUser();
+    }
+  };
+</script>
+
+
+</body>
+
+</html>
